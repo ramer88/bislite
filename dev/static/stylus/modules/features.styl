@@ -1,0 +1,84 @@
+section.features
+	padding 60px 0 51px
+	background-color addColor
+	
+.features-container
+	width 100%
+	max-width 1000px
+	margin 0 auto
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	
+.features-box
+	display flex
+	flex-direction column
+	justify-content space-between
+	flex-wrap wrap
+	width 100%
+	max-width 215px
+	height 189px
+	
+.features-title-box
+	display flex
+	align-items center
+	flex-wrap wrap
+	margin-bottom 19px
+
+.icon-box
+	position relative
+	size(40px)
+	margin-right 15px
+	background-color activeTextColor
+	border-radius 50%
+
+.icon-pencil,
+.icon-fullscreen,
+.icon-view-list,
+.icon-plane
+	absolute-center()
+	fill #fff
+	
+.icon-pencil
+	size(21px,24px)
+	
+.icon-fullscreen
+	size(21px,17px)
+	
+.icon-view-list
+	size(16px)
+	
+.icon-plane
+	top 52%
+	left 57%
+	size(26px,23px)
+	
+.features-title
+	color #000
+	font-family boldFont
+	font-size rem(15)
+	text-transform uppercase
+	white-space nowrap
+
+.features-desc
+	padding-bottom 30px
+	font-size rem(13)
+
+.read-more
+	span
+		position relative
+		display block
+		padding-left 14px
+		color activeTextColor
+		font-size rem(13)
+		
+		&:before
+			position absolute
+			top 2px
+			left 0px
+			content ''
+			display block
+			size(7px)
+			border-top 2px solid #000
+			border-right 2px solid #000
+			transform rotate(45deg)

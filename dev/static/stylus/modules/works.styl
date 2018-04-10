@@ -1,0 +1,119 @@
+section.works
+	border-top 1px solid #d9d9d9
+	border-bottom 1px solid #d9d9d9
+
+.works-container
+	width 100%
+	max-width 1000px
+	margin 0 auto
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	padding 20px 0 39px
+	
+.testimonial,
+.our_clients
+	width 100%
+	max-width 500px
+
+.testimonial-title-box,
+.our_clients-title-box
+	margin-bottom 20px
+	display flex
+	align-items center
+	flex-wrap wrap
+
+.icon-comments,
+.icon-clients
+	margin-right 16px
+	fill activeTextColor
+	size(24px,23px)
+
+.testimonial-title,
+.our_clients-title
+	color #000
+	font-family boldFont
+	font-size rem(15)
+	text-transform uppercase
+	
+.testimonial-desc
+	font-size rem(14)
+	p
+		margin-bottom 38px
+		width 100%
+		max-width 424px
+	span
+		display block
+		margin-bottom 60px
+		font-family boldItalicFont
+		
+.icon-clients
+	fill activeTextColor
+	size(24px,20px)
+	
+.our_clients
+	padding-left 21px
+
+.our_clients-label
+	margin-bottom 40px
+	display flex
+	flex-wrap wrap
+	
+	li
+		size(158px,98px)
+		background-size cover
+
+.our_clients-label>li:nth-child(1)
+	background url('../img/content/logo1.jpg') 0 0 no-repeat
+	
+.our_clients-label>li:nth-child(2)
+	background url('../img/content/logo2.jpg') 0 0 no-repeat
+	
+.our_clients-label>li:nth-child(3)
+	background url('../img/content/logo3.jpg') 0 0 no-repeat
+	
+.our_clients-label>li:nth-child(4)
+	background url('../img/content/logo4.jpg') 0 0 no-repeat
+	
+.our_clients-label>li:nth-child(5)
+	background url('../img/content/logo5.jpg') 0 0 no-repeat
+	
+.our_clients-label>li:nth-child(6)
+	background url('../img/content/logo6.jpg') 0 0 no-repeat
+	
+.download
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	width 100%
+	border 1px solid activeTextColor
+	padding 36px 40px
+	background-color secondAddColor
+	
+	p
+		width 100%
+		max-width 604px
+		font-size rem(16)
+		
+	button
+		position relative
+		border 1px solid activeTextColor
+		border-radius 5px
+		padding 15px 19px 19px 70px
+		background rgb(128,227,237) linear-gradient(rgb(128,227,237), rgb(42,172,200))
+		color #000
+		font-size rem(18)
+		font-family boldFont
+		text-transform uppercase
+		
+		&:hover
+			background rgb(42,172,200)
+			color #fff
+		
+		.icon-download
+			position absolute
+			top 50%
+			left 18px
+			transform translateY(-50%)
+			size(28px,25px)
+			fill #fff

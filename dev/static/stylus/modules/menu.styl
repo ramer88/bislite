@@ -1,0 +1,77 @@
+.sub-menu
+	display none
+	
+.menu
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	
+	li
+		//margin-left 50px
+		
+		a
+			display inline-block
+			padding 13px 27px 17px
+			color #000
+			font-family boldFont
+			font-size rem(13)
+			white-space nowrap
+			
+			&:hover
+				padding 8px 27px 17px
+				border-top 5px solid activeTextColor
+				background-color #fff
+				color activeTextColor
+				
+			
+		&:hover
+			.sub-menu
+				position absolute
+				top 45px
+				left 0
+				display block
+				background-color #fff
+				z-index 2
+				
+				li
+					border-top 1px solid #e7e7e7
+					//background-color #fff
+					
+					a
+						padding 13px 27px 17px
+						border-top none
+					
+					&:last-child
+						border-bottom 5px solid activeTextColor
+
+	/*&:last-child
+		padding-left 0
+		*/
+.services,
+.portfolio
+	position relative
+	&:hover
+		//padding 8px 27px 17px
+		border-top 5px solid activeTextColor
+		background-color #fff
+		
+		.services-link,
+		.portfolio-link
+			border-top none
+			
+			&:hover
+				padding 13px 27px 17px
+
+.services:before,
+.portfolio:before
+	position absolute
+	top 15px
+	left 90px
+	content ''
+	display block
+	width 7px
+	height 7px
+	border-top 2px solid #000
+	border-right 2px solid #000
+	transform rotate(135deg)
+	
